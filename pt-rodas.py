@@ -14,6 +14,7 @@ st.write("✅ App iniciado com sucesso! Faça o upload de um arquivo para começ
 cut_off = 0.64
 
 # Nome do arquivo do modelo
+# Este é o nome do arquivo que será passado como string.
 model_filename = 'modelo_p_t_rod_3_smt'
 
 # Função para carregar o modelo em cache
@@ -50,7 +51,8 @@ if uploaded_file is not None:
             X = array[:, 0:36]
 
             # Carregando o modelo
-            model = load_model(modelo_p_t_rod_3_smt)
+            # AQUI ESTÁ A CORREÇÃO: a variável 'model_filename' é passada como argumento.
+            model = load_model(model_filename)
             if model is None:
                 st.stop()
 
