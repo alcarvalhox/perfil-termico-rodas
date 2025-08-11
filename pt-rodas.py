@@ -15,7 +15,7 @@ cut_off = 0.64
 
 # Nome do arquivo do modelo
 # Este é o nome do arquivo que será passado como string.
-model_filename = 'modelo_p_t_rod_3_smt'
+model_filename = 'modelo_p_t_rod_5_smt'
 
 # Função para carregar o modelo em cache
 @st.cache_resource
