@@ -46,8 +46,6 @@ if uploaded_file is not None:
             # Lendo o arquivo Excel
             bd1 = pd.read_excel(uploaded_file, engine='openpyxl')
             array = bd1.values
-            # O código original usava X = array[:,0:36]
-            # Assumindo que as 36 primeiras colunas são as features
             X = array[:, 0:36]
 
             # Carregando o modelo
