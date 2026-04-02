@@ -12,4 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping no servidor do Streamlit
-        run: curl -sL https://perfil-termico-rodas-sgucdepziyz2rvhjhttkhp.streamlit.app/ > /dev/null
+        # Link sem a barra no final, disfarce de navegador Chrome (-A) e ignorador de erros (|| true)
+        run: curl -sL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" https://perfil-termico-rodas-sgucdepziyz2rvhjhttkhp.streamlit.app > /dev/null || true
